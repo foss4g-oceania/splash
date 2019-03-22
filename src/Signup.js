@@ -23,11 +23,11 @@ class Signup extends Component {
           <div id="mc_embed_signup_scroll">
             <label for="mce-EMAIL">Subscribe for updates</label>
             <span style={{paddingRight: 10}}>Email</span>
-            <input style={{borderRadius: '15px'}} type="email" defaultValue="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="" required/>
+            <input style={{borderRadius: '15px', fontWeight: 'bold'}} type="email" defaultValue="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="" required/>
             <div style={{position: 'absolute', left: '-5000px', ariaHidden: "true"}}>
               <input type="text" name="b_26f3c80da46835144592b59b6_3d38178ba0" tabindex="-1" value={this.state.email} onChange={this.handleChange}/>
             </div>
-            <div style={{paddingLeft: 10}} className="clear btn btn-submit">
+            <div className="clear btn btn-submit">
               <input style={{borderRadius: '15px'}} type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"/>
             </div>
           </div>

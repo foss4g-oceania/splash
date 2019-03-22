@@ -6,6 +6,9 @@
   /* animation: App-logo-spin infinite 20s linear; */
   height: 80vmin;
   pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .App-header {
@@ -33,9 +36,15 @@
   color: #61dafb;
 }
 
-p {
-  color: #241E22;
-  margin: 0;
+.grid-container {
+  display: grid;
+  grid-gap: 50px 50px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-item {
+  grid-column: 2 / span 2;
 }
 
 .btn input {
@@ -45,13 +54,25 @@ p {
 #mc_embed_signup {
   padding-top: 15px;
   clear: left;
-  font: 14px Helvetica,Arial,sans-serif;
+  font: 15px 'Abel',sans-serif;
   width: 100%;
   margin-bottom: 15px;
 }
 
-#mc-embedded-subscribe {
+#mc-embedded-subscribe * input {
   border-radius: 50%;
+}
+
+input#mc-embedded-subscribe.button {
+  color: #F3E9E3;
+  background-color: #241E22;
+  border: 1px solid #F3E9E3;
+}
+
+input#mc-embedded-subscribe.button:hover {
+  background-color: #53ADE2;
+  color: #241E22;
+  border-color: #F9B2C0;
 }
 
 @keyframes App-logo-spin {
