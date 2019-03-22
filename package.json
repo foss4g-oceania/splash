@@ -12,8 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "invalidate": "aws cloudfront create-invalidation --distribution-id E39ZLI1V81YN4P --paths '/*'",
-    "sync": "aws s3 sync build/ s3://foss4g-oceania.org",
+    "invalidate": "aws cloudfront create-invalidation --distribution-id E2LELGYL91QZ4N --paths '/*' --profile foss4g",
+    "sync": "aws s3 sync build/ s3://foss4g-oceania-preview --profile foss4g",
     "deploy": "npm run build && npm run sync && npm run invalidate"
   },
   "eslintConfig": {
