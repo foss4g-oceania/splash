@@ -14,7 +14,7 @@ class App extends Component {
         <body class="App-body">
           <Signup/>
           <Social/>
-          <div>© FOSSS4G Oceania 2019</div>
+          <div>© FOSS4G Oceania 2019</div>
         </body>
       </div>
     );
