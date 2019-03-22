@@ -14,12 +14,6 @@ class App extends Component {
         <body class="App-body">
           <div className="blurb grid-container">
             <div className="grid-item">
-              <Signup/>
-            </div>
-            <div className="grid-item">
-              <Social/>
-            </div>
-            <div className="grid-item">
               <p>
                 In 2019, Wellington hosts the second joint Free and Open Source Software for Geospatial (FOSS4G) and State of the Map (SotM) conference for Oceania.
               </p>
@@ -29,6 +23,12 @@ class App extends Component {
               <p>
                 © FOSS4G SotM Oceania 2019
               </p>
+            </div>
+            <div className="grid-item">
+              <Signup/>
+            </div>
+            <div className="grid-item">
+              <Social/>
             </div>
           </div>
         </body>
