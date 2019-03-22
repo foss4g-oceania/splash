@@ -22,6 +22,7 @@ class Signup extends Component {
         <form action="https://foss4g-oceania.us17.list-manage.com/subscribe/post?u=26f3c80da46835144592b59b6&amp;id=3d38178ba0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
             <label for="mce-EMAIL">Subscribe for updates</label>
+            <br/>
             <span style={{paddingRight: 10}}>Email</span>
             <input style={{borderRadius: '15px', fontWeight: 'bold'}} type="email" defaultValue="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="" required/>
             <div style={{position: 'absolute', left: '-5000px', ariaHidden: "true"}}>
