@@ -12,7 +12,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && aws s3 sync build/ s3://foss4g-oceania.org"
+    "invalidate": "aws cloudfront create-invalidation --distribution-id E39ZLI1V81YN4P --paths '/*'",
+    "sync": "aws s3 sync build/ s3://foss4g-oceania.org",
+    "deploy": "npm run build && npm run sync && npm run invalidate"
   },
   "eslintConfig": {
     "extends": "react-app"
