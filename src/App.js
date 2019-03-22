@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Signup from './Signup';
 import Social from './Social';
+import scroll from './mouse_scroll.svg';
 import './App.css';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <img style={{position: 'absolute', bottom: 10, width: 35, opacity: 0.1}} src={scroll} alt="scroll down" onClick={() => window.scrollTo(0, document.body.scrollHeight)} />
         </header>
         <body class="App-body">
           <div className="blurb grid-container">

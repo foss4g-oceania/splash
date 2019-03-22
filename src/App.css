@@ -75,6 +75,17 @@ input#mc-embedded-subscribe.button:hover {
   border-color: #F9B2C0;
 }
 
+label {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.social img {
+  width: 32px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
