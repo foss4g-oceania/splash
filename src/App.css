@@ -19,7 +19,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #241E22;
+}
+
+.App-header {
+  font-size: 100%;
 }
 
 .App-body {
